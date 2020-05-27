@@ -6,40 +6,31 @@ console.log('Welcome to the Brain Games!');
 const name = readlineSync.question('May I have your name? :');
 console.log(`Hello ${name}!`);
 
-
 const randomnumber = (down, up) => {
   down = Math.ceil(down);
   up = Math.floor(up);
   return Math.floor(Math.random() * (up - down + 1)) + down;
 };
 
-const calc = (x, y, z) => {
-  if (z === '*') {
-    return x * y;
-  } else if (z === '+') {
-    return x + y;
-  } else if (z === '-') {
-    return x - y;
+const progression = (x, y) => {
+  const arrprog = [x];
+  const max = arrprog.length - 1;
+  for (let i = 1; i <= 10; i += 1) {
+    const numbermax = arrprog[arrprog.length - 1];
+    arrprog.push(numbermax + y);
   }
+  return arrprog;
 };
-const znk = (x) => {
-  const xmax = x.length - 1;
-  const i = randomnumber(0, xmax);
-  return x[i]
-};
-  
- 
 
 
 const game = () => {
-  console.log('What is the result of the expression?');
+  console.log('What number is missing in the progression?');
   for (let i = 1; i <= 3; i += 1) {
-    const value1 = randomnumber(1, 100);
-    const value2 = randomnumber(1, 100);
-    const znak = znk('+-*');
-    const answer = calc(value1, value2, znak);
-    const expression = `${value1} ${znak} ${value2}`
-    console.log(`Question: ${expression}`);
+    const progres = progression(randomnumber(1, 100), randomnumber(1, 100));
+    const ix = randomnumber(1, 10);
+    const answer = progres[ix];
+    progres[ix] = '..';
+    console.log(`Question: ${progres}`);
     const result = readlineSync.question('Your answer: ');
     if (Number(result) === answer) {
       console.log('Correct!');
@@ -50,7 +41,3 @@ const game = () => {
   return console.log(`Congratulations, ${name}!`);
 };
 game();
-
-
-
-
