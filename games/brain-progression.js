@@ -14,14 +14,12 @@ const randomnumber = (down, up) => {
 
 const progression = (x, y) => {
   const arrprog = [x];
-  const max = arrprog.length - 1;
   for (let i = 1; i <= 10; i += 1) {
     const numbermax = arrprog[arrprog.length - 1];
     arrprog.push(numbermax + y);
   }
   return arrprog;
 };
-
 
 const game = () => {
   console.log('What number is missing in the progression?');

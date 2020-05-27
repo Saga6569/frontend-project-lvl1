@@ -11,9 +11,11 @@ brain-gcd:
 	node games/brain-gcd.js
 brain-progression:
 	node games/brain-progression.js
+brain-prime:
+	node games/brain-prime.js
 
 publish:
-	npm publish --dry-run
+	sudo npm publish --dry-run
 
 lint:
 	npx eslint .

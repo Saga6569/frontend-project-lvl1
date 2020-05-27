@@ -6,26 +6,35 @@ console.log('Welcome to the Brain Games!');
 const name = readlineSync.question('May I have your name? :');
 console.log(`Hello ${name}!`);
 
-
 const randomnumber = (down, up) => {
   down = Math.ceil(down);
   up = Math.floor(up);
   return Math.floor(Math.random() * (up - down + 1)) + down;
 };
 
-const wath = (x) => {
-  if (x % 2 === 0) {
-    return 'yes';
+const deliteli = (x) => {
+  const xdel = [];
+  for (let i = 1; i <= x; i += 1) {
+    if (x % i === 0) {
+      xdel.push(i);
+    }
   }
-  return 'no';
+  return xdel;
+};
+
+const prim = (arr) => {
+  if (arr.length - 1 !== 1) {
+    return 'no';
+  }
+  return 'yes';
 };
 
 const game = () => {
-  console.log('Answer "yes" if the number is even, otherwise answer "no"');
+  console.log('Answer "yes" if given number is prime. Otherwise answer "no".');
   for (let i = 1; i <= 3; i += 1) {
-    const value = randomnumber(1, 100);
-    const answer = wath(value);
-    console.log(`Question: ${value}`);
+    const quast = randomnumber(1, 100);
+    const answer = prim(deliteli(quast));
+    console.log(`Question: ${quast}`);
     const result = readlineSync.question('Your answer: ');
     if (result === answer) {
       console.log('Correct!');

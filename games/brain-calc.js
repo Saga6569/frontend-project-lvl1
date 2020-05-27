@@ -25,11 +25,8 @@ const calc = (x, y, z) => {
 const znk = (x) => {
   const xmax = x.length - 1;
   const i = randomnumber(0, xmax);
-  return x[i]
+  return x[i];
 };
-  
- 
-
 
 const game = () => {
   console.log('What is the result of the expression?');
@@ -38,7 +35,7 @@ const game = () => {
     const value2 = randomnumber(1, 100);
     const znak = znk('+-*');
     const answer = calc(value1, value2, znak);
-    const expression = `${value1} ${znak} ${value2}`
+    const expression = `${value1} ${znak} ${value2}`;
     console.log(`Question: ${expression}`);
     const result = readlineSync.question('Your answer: ');
     if (Number(result) === answer) {
@@ -50,7 +47,3 @@ const game = () => {
   return console.log(`Congratulations, ${name}!`);
 };
 game();
-
-
-
-
