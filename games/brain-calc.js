@@ -1,47 +1,37 @@
 #!/usr/bin/env node
 
 import readlineSync from 'readline-sync';
-
-console.log('Welcome to the Brain Games!');
-const name = readlineSync.question('May I have your name? :');
-console.log(`Hello ${name}!`);
-
-
-const randomnumber = (down, up) => {
-  down = Math.ceil(down);
-  up = Math.floor(up);
-  return Math.floor(Math.random() * (up - down + 1)) + down;
-};
-
-const calc = (x, y, z) => {
-  if (z === '*') {
-    return x * y;
-  } else if (z === '+') {
-    return x + y;
-  } else if (z === '-') {
-    return x - y;
+import { randomnumber, deliteli } from '/home/dima/hexlet/frontend-project-lvl1/src/repetitive functions.js';
+ 
+const calc = (x, y) => {    // функция принимает 2 числа  и возвращает массив : результат и строку 
+  const str = '*-+';
+  const strmax = str.length - 1;
+  const i = randomnumber(0, strmax);
+    if (str[i] === '*' ) {
+    const acalc = [(x * y), `${x} * ${y}`]
+    return acalc
+  } else if (str[i] === '+') {
+    const acalc = [(x + y), `${x} + ${y}`]
+    return acalc
+  } else if (str[i] === '-' ) {
+    const acalc = [(x - y), `${x} - ${y}`]
+    return  acalc
   }
-};
-const znk = (x) => {
-  const xmax = x.length - 1;
-  const i = randomnumber(0, xmax);
-  return x[i];
 };
 
 const game = () => {
+  console.log('Welcome to the Brain Games!');
+  const name = readlineSync.question('May I have your name? :');
+  console.log(`Hello ${name}!`);
   console.log('What is the result of the expression?');
   for (let i = 1; i <= 3; i += 1) {
-    const value1 = randomnumber(1, 100);
-    const value2 = randomnumber(1, 100);
-    const znak = znk('+-*');
-    const answer = calc(value1, value2, znak);
-    const expression = `${value1} ${znak} ${value2}`;
-    console.log(`Question: ${expression}`);
+    const answer = calc(randomnumber(1, 100), randomnumber(1, 100));
+    console.log(`Question: ${answer[1]}`);
     const result = readlineSync.question('Your answer: ');
-    if (Number(result) === answer) {
+    if (Number(result) === answer[0]) {
       console.log('Correct!');
     } else {
-      return console.log(`"${result}" is wrong answer ;(. Correct answer was "${answer}" .\nLet's try again, ${name}!`);
+      return console.log(`"${result}" is wrong answer ;(. Correct answer was "${answer[0]}" .\nLet's try again, ${name}!`);
     }
   }
   return console.log(`Congratulations, ${name}!`);

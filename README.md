@@ -1,12 +1,11 @@
 <a href="https://codeclimate.com/github/Saga6569/frontend-project-lvl1/maintainability"><img src="https://api.codeclimate.com/v1/badges/9014601b27c2cee4f689/maintainability" /></a>
 
-https://asciinema.org/connect/859f1268-6099-4422-9445-77d363688126
+https://asciinema.org/a/hXnRYcAHPTetlFqnk2EIxujdy
 
+https://asciinema.org/a/YlzeU8TRRWjCKl1Id5pk63qjS
 
-https://asciinema.org/a/4XDrpAY2oqgriRgjdi9Cz0nkE
+https://asciinema.org/a/GzV7yXWOJsvckDb1v29CRRixl
 
-https://asciinema.org/a/x1G5bFuwryrQV6JNBPRcWNZqJ
+https://asciinema.org/a/QXzPY0hRL1BJap7HBTb23wCso
 
- https://asciinema.org/a/hJkvDfl5Elj1IZFHVaMeZCjWg
-
-https://asciinema.org/a/PrAjF59jWORWSPHHxIVmXGJ36
+https://asciinema.org/a/RsXINXeuH1ckomOHs9GtwMHhc

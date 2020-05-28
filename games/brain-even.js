@@ -1,19 +1,9 @@
 #!/usr/bin/env node
 
 import readlineSync from 'readline-sync';
+import { randomnumber} from '/home/dima/hexlet/frontend-project-lvl1/src/repetitive functions.js';
 
-console.log('Welcome to the Brain Games!');
-const name = readlineSync.question('May I have your name? :');
-console.log(`Hello ${name}!`);
-
-
-const randomnumber = (down, up) => {
-  down = Math.ceil(down);
-  up = Math.floor(up);
-  return Math.floor(Math.random() * (up - down + 1)) + down;
-};
-
-const wath = (x) => {
+const wath = (x) => {  // функция проверяет  число  на  четность 
   if (x % 2 === 0) {
     return 'yes';
   }
@@ -21,6 +11,9 @@ const wath = (x) => {
 };
 
 const game = () => {
+  console.log('Welcome to the Brain Games!');
+  const name = readlineSync.question('May I have your name? :');
+  console.log(`Hello ${name}!`);
   console.log('Answer "yes" if the number is even, otherwise answer "no"');
   for (let i = 1; i <= 3; i += 1) {
     const value = randomnumber(1, 100);

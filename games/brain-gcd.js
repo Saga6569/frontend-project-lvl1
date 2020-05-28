@@ -1,19 +1,9 @@
 #!/usr/bin/env node
 
 import readlineSync from 'readline-sync';
+import { randomnumber} from '/home/dima/hexlet/frontend-project-lvl1/src/repetitive functions.js';
 
-console.log('Welcome to the Brain Games!');
-const name = readlineSync.question('May I have your name? :');
-console.log(`Hello ${name}!`);
-
-
-const randomnumber = (down, up) => {
-  down = Math.ceil(down);
-  up = Math.floor(up);
-  return Math.floor(Math.random() * (up - down + 1)) + down;
-};
-
-const deliteli = (x) => {
+const deliteli = (x) => {    // функция принимает число и возвращает массив делителей числа
   const xdel = [];
   for (let i = 1; i <= x; i += 1) {
     if (x % i === 0) {
@@ -23,7 +13,7 @@ const deliteli = (x) => {
   return xdel;
 };
 
-const coincidences = (arr1, arr2) => {
+const coincidences = (arr1, arr2) => {    // функция принимает 2 массива и возвращает наибольшее совпадение 
   const result = [];
   const longarr1 = arr1.length - 1;
   for (let i = 0; i <= longarr1; i += 1) {
@@ -35,6 +25,9 @@ const coincidences = (arr1, arr2) => {
 };
 
 const gamegcd = () => {
+  console.log('Welcome to the Brain Games!');
+  const name = readlineSync.question('May I have your name? :');
+  console.log(`Hello ${name}!`);
   console.log('Find the greatest common divisor of given numbers.');
   for (let i = 1; i <= 3; i += 1) {
     const value1 = randomnumber(1, 100);

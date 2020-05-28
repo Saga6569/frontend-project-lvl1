@@ -1,16 +1,8 @@
 #!/usr/bin/env node
 
 import readlineSync from 'readline-sync';
+import { randomnumber } from '/home/dima/hexlet/frontend-project-lvl1/src/repetitive functions.js';
 
-console.log('Welcome to the Brain Games!');
-const name = readlineSync.question('May I have your name? :');
-console.log(`Hello ${name}!`);
-
-const randomnumber = (down, up) => {
-  down = Math.ceil(down);
-  up = Math.floor(up);
-  return Math.floor(Math.random() * (up - down + 1)) + down;
-};
 
 const progression = (x, y) => {
   const arrprog = [x];
@@ -22,6 +14,9 @@ const progression = (x, y) => {
 };
 
 const game = () => {
+  console.log('Welcome to the Brain Games!');
+  const name = readlineSync.question('May I have your name? :');
+  console.log(`Hello ${name}!`);
   console.log('What number is missing in the progression?');
   for (let i = 1; i <= 3; i += 1) {
     const progres = progression(randomnumber(1, 100), randomnumber(1, 100));
