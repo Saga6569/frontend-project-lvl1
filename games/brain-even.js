@@ -1,9 +1,9 @@
 #!/usr/bin/env node
 
 import readlineSync from 'readline-sync';
-import { randomnumber} from '/home/dima/hexlet/frontend-project-lvl1/src/repetitive functions.js';
+import { randomnumber } from '/home/dima/hexlet/frontend-project-lvl1/src/repetitive functions.js';
 
-const wath = (x) => {  // функция проверяет  число  на  четность 
+const wath = (x) => { // функция проверяет  число  на  четность
   if (x % 2 === 0) {
     return 'yes';
   }

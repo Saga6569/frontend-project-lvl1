@@ -3,7 +3,7 @@
 import readlineSync from 'readline-sync';
 import { randomnumber, deliteli } from '/home/dima/hexlet/frontend-project-lvl1/src/repetitive functions.js';
 
-const prim = (arr) => {     // принимает массив  и возвращает 'no' если елс больше 2 элементов 
+const prim = (arr) => { // принимает массив  и возвращает 'no' если елс больше 2 элементов
   if (arr.length - 1 !== 1) {
     return 'no';
   }

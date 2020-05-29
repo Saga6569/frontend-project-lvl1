@@ -1,21 +1,21 @@
 #!/usr/bin/env node
 
 import readlineSync from 'readline-sync';
-import { randomnumber, deliteli } from '/home/dima/hexlet/frontend-project-lvl1/src/repetitive functions.js';
- 
-const calc = (x, y) => {    // функция принимает 2 числа  и возвращает массив : результат и строку 
+import { randomnumber } from '/home/dima/hexlet/frontend-project-lvl1/src/repetitive functions.js';
+
+const calc = (x, y) => { // функция принимает 2 числа  и возвращает массив : результат и строку
   const str = '*-+';
   const strmax = str.length - 1;
   const i = randomnumber(0, strmax);
-    if (str[i] === '*' ) {
-    const acalc = [(x * y), `${x} * ${y}`]
-    return acalc
+  if (str[i] === '*') {
+    const acalc = [(x * y), `${x} * ${y}`];
+    return acalc;
   } else if (str[i] === '+') {
-    const acalc = [(x + y), `${x} + ${y}`]
-    return acalc
-  } else if (str[i] === '-' ) {
-    const acalc = [(x - y), `${x} - ${y}`]
-    return  acalc
+    const acalc = [(x + y), `${x} + ${y}`];
+    return acalc;
+  } else if (str[i] === '-') {
+    const acalc = [(x - y), `${x} - ${y}`];
+    return acalc;
   }
 };
 

@@ -1,19 +1,9 @@
 #!/usr/bin/env node
 
 import readlineSync from 'readline-sync';
-import { randomnumber} from '/home/dima/hexlet/frontend-project-lvl1/src/repetitive functions.js';
+import { randomnumber, deliteli } from '/home/dima/hexlet/frontend-project-lvl1/src/repetitive functions.js';
 
-const deliteli = (x) => {    // функция принимает число и возвращает массив делителей числа
-  const xdel = [];
-  for (let i = 1; i <= x; i += 1) {
-    if (x % i === 0) {
-      xdel.push(i);
-    }
-  }
-  return xdel;
-};
-
-const coincidences = (arr1, arr2) => {    // функция принимает 2 массива и возвращает наибольшее совпадение 
+const coincidences = (arr1, arr2) => { // принимает 2 массива и возвращает наибольшее совпадение
   const result = [];
   const longarr1 = arr1.length - 1;
   for (let i = 0; i <= longarr1; i += 1) {
