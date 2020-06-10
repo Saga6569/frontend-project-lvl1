@@ -1,19 +1,9 @@
-
-const game = () => {
-  console.log('Welcome to the Brain Games!');
-  const name = readlineSync.question('May I have your name? :');
-  console.log(`Hello ${name}!`);
-  console.log(regulations);
-  for (let i = 1; i <= 3; i += 1) {
-    const answer = ;
-    console.log(`Question: ${answer}`);
-    const result = readlineSync.question('Your answer: ');
-    if (Number(result) === answer[0]) {
-      console.log('Correct!');
-    } else {
-      return console.log(`"${result}" is wrong answer ;(. Correct answer was "${answer[0]}" .\nLet's try again, ${name}!`);
-    }
+const comparison = (game_response, user_response, name) => {
+  if (game_response === user_response) {
+    console.log('Correct!');
+    return 1;
   }
-  return console.log(`Congratulations, ${name}!`);
+  console.log(`"${user_response}" is wrong answer ;(. Correct answer was "${game_response}" .\nLet's try again, ${name}!`);
+  return 0;
 };
-game();
+export default comparison;

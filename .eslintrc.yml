@@ -1,11 +1,11 @@
+# https://eslint.org/docs/user-guide/configuring#specifying-environments
 env:
   node: true
-  browser: true
-  es6: true
+  
 extends:
-  - 'eslint:recommended'
-  - 'plugin:react/recommended'
   - 'airbnb-base'
+  - 'plugin:jest/recommended'
+
   
 globals:
   Atomics: readonly
@@ -16,9 +16,9 @@ parserOptions:
   ecmaVersion: 2018
   sourceType: module
 plugins:
-  - react
-
+  # https://github.com/jest-community/eslint-plugin-jest
+  - jest
   
-rules: 
+rules:
   no-console: 0
-  import/extensions: 0 # FIXME: remove when rule will be adjusted for new nodejs version {}
+  import/extensions: 0 # FIXME: remove when rule will be adjusted for new nodejs version
