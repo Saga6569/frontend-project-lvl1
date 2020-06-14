@@ -41,9 +41,12 @@ export const prim = () => { // принимает массив  и возвра�
   return ['yes', value];
 };
 
-export const greetingName = (gameСonditions, name) => {
+export const greetingName = (gameСonditions) => {
+  console.log('Welcome to the Brain Games!');
+  const name = readlineSync.question('May I have your name? : ');
   console.log(`Hello ${name}!`);
   console.log(gameСonditions);
+  return name;
 };
 
 export const greeting = 'Welcome to the Brain Games!';
@@ -75,7 +78,7 @@ export const calc = () => {
 
 export const isEven = () => { // функция проверяет  число  на  четность
   const value = randomNumber(1, 100);
-  if ((value % 2 === 0) === true ) {
+  if ((value % 2 === 0) === true) {
     return ['yes', value];
   }
   return ['no', value];
