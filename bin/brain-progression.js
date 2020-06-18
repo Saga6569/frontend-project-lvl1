@@ -1,9 +1,28 @@
 #!/usr/bin/env node
 
-import readlineSync from 'readline-sync';
-import { greetingName, brainProgression, gameEngine, greeting } from '../src/index.js';
+import { gameEngine, randomNumber } from '../src/index.js';
+
+const brainProgression = 'What number is missing in the progression?';
+
+const progression = () => {
+  const value1 = randomNumber(1, 100);
+  const value2 = randomNumber(1, 100);
+  const arrprog = [value1];
+  const longProgress = 10;
+  let gameResponse = 0;
+  for (let i = 1; i <= longProgress; i += 1) {
+    const numbermax = arrprog[arrprog.length - 1];
+    arrprog.push(numbermax + value2);
+  }
+  const ix = randomNumber(1, 10);
+  gameResponse = arrprog[ix];
+  arrprog[ix] = '..';
+  return [gameResponse, arrprog.join('  ')];
+};
 
 const gameProgression = () => {
-  gameEngine('gameProgression', greetingName(brainProgression, greeting));
+  gameEngine(brainProgression, 'gameProgression');
 };
 gameProgression();
+
+export default progression;
