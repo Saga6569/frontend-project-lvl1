@@ -1,6 +1,8 @@
 #!/usr/bin/env node
 
-import { gameEngine, randomNumber } from '../src/index.js';
+import gameEngine from '../src/index.js';
+
+import { randomNumber } from './utils.js';
 
 const brainProgression = 'What number is missing in the progression?';
 
@@ -21,8 +23,6 @@ const progression = () => {
 };
 
 const gameProgression = () => {
-  gameEngine(brainProgression, 'gameProgression');
+  gameEngine(brainProgression, progression);
 };
 gameProgression();
-
-export default progression;

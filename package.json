@@ -28,7 +28,9 @@
     "url": "https://github.com/Saga6569/frontend-project-lvl1/issues"
   },
   "homepage": "https://github.com/Saga6569/frontend-project-lvl1#readme",
-  "dependencies": {},
+  "dependencies": {
+    "readline-sync": "^1.4.10"
+  },
   "devDependencies": {
     "@babel/cli": "^7.8.4",
     "@babel/core": "^7.9.6",
@@ -38,7 +40,6 @@
     "eslint-config-airbnb-base": "^14.1.0",
     "eslint-plugin-import": "^2.20.2",
     "eslint-plugin-jest": "^23.13.2",
-    "eslint-plugin-react": "^7.20.0",
-    "readline-sync": "^1.4.10"
+    "eslint-plugin-react": "^7.20.0"
   }
 }

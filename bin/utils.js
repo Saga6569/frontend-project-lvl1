@@ -1,8 +1,15 @@
-#!/usr/bin/env node
-
-import { greetingName, brainProgression, gameEngine, greeting } from '../src/index.js';
-
-const gameProgression = () => {
-  gameEngine('gameProgression', greetingName(brainProgression, greeting));
+export const randomNumber = (down, up) => {
+  down = Math.ceil(down);
+  up = Math.floor(up);
+  return Math.floor(Math.random() * (up - down + 1)) + down;
 };
-gameProgression();
+
+export const numberDividers = (value) => {
+  const result = [];
+  for (let i = 1; i <= value; i += 1) {
+    if (value % i === 0) {
+      result.push(i);
+    }
+  }
+  return result;
+};

@@ -1,6 +1,8 @@
 #!/usr/bin/env node
 
-import { gameEngine, randomNumber } from '../src/index.js';
+import gameEngine from '../src/index.js';
+
+import { randomNumber } from './utils.js';
 
 const brainEven = 'Answer "yes" if the number is even, otherwise answer "no"';
 
@@ -16,5 +18,3 @@ const gameEven = () => {
   gameEngine(brainEven, isEven);
 };
 gameEven();
-
-export default isEven;

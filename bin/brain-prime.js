@@ -1,10 +1,12 @@
 #!/usr/bin/env node
 
-import { gameEngine, randomNumber } from '../src/index.js';
+import gameEngine from '../src/index.js';
+
+import { randomNumber, numberDividers } from './utils.js';
 
 const brainPrime = 'Answer "yes" if given number is prime. Otherwise answer "no".';
 
-const prim = () => { // принимает массив  и возвращает 'no' если елс больше 2 элементов
+const IsPrimeNumber = () => { // принимает массив  и возвращает 'no' если елс больше 2 элементов
   const value = randomNumber(1, 100);
   const arr = numberDividers(value);
   if ((arr.length - 1 !== 1) === true) {
@@ -14,8 +16,6 @@ const prim = () => { // принимает массив  и возвращает
 };
 
 const gamePrime = () => {
-  gameEngine(brainPrime, 'gamePrime');
+  gameEngine(brainPrime, IsPrimeNumber);
 };
 gamePrime();
-
-export default prim;

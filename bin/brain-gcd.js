@@ -1,6 +1,8 @@
 #!/usr/bin/env node
 
-import {  gameEngine, randomNumber } from '../src/index.js';
+import gameEngine from '../src/index.js';
+
+import { randomNumber, numberDividers } from './utils.js';
 
 const brainGcd = 'Find the greatest common divisor of given numbers.';
 
@@ -21,8 +23,6 @@ const matchDividers = () => { // функция верет наибольшуу 
 };
 
 const gameGcd = () => {
-  gameEngine(brainGcd, 'gamGcd');
+  gameEngine(brainGcd, matchDividers);
 };
 gameGcd();
-
-export default matchDividers;

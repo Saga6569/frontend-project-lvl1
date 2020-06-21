@@ -1,10 +1,12 @@
 #!/usr/bin/env node
 
-import { gameEngine, randomNumber } from '../src/index.js';
+import gameEngine from '../src/index.js';
+
+import { randomNumber } from './utils.js';
 
 const brainCalc = 'What is the result of the expression?';
 
-const calc = () => {
+const calculator = () => {
   let gameResponse = 0;
   let messeg = '';
   const str = '*-+';
@@ -24,10 +26,7 @@ const calc = () => {
   return [gameResponse, messeg];
 };
 
-export default calc;
-
 const gameCalc = () => {
-  gameEngine(brainCalc, calc);
+  gameEngine(brainCalc, calculator);
 };
 gameCalc();
-
