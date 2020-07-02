@@ -1,5 +1,10 @@
 <a href="https://codeclimate.com/github/Saga6569/frontend-project-lvl1/maintainability"><img src="https://api.codeclimate.com/v1/badges/9014601b27c2cee4f689/maintainability" /></a>
 
+
+2a14a7015703ea6d60765c31a2947e9ab702c5f576cf31dc00548324b95cf486
+
+
+
 https://asciinema.org/a/8duYTDWtxar97mM6223FAdvzZ // brain-calc
 
 https://asciinema.org/a/CGdAdOmXx4yB2KvpTMUn39tqr // brain-even
