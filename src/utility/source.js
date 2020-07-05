@@ -38,8 +38,7 @@ const isEven = (value) => {
 
 export const resultIsEven = () => {
   const value = randomNumber(1, 100);
-  const result = isEven(value);
-  if (result === true) {
+  if (isEven(value) === true) {
     return ['yes', value];
   }
   return ['no', value];
@@ -73,8 +72,7 @@ const isPrime = (num) => {
 
 export const resultIsPrime = () => {
   const value = randomNumber(1, 100);
-  const result = isPrime(value);
-  if (result === true) {
+  if (isPrime(value) === true) {
     return ['yes', value];
   }
   return ['no', value];
