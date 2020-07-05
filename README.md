@@ -2,9 +2,14 @@
 # Учебный проект игры в рамках курса по фронтенду от hexlet.io
 
 
-
 <a href="https://codeclimate.com/github/Saga6569/frontend-project-lvl1/maintainability"><img src="https://api.codeclimate.com/v1/badges/9014601b27c2cee4f689/maintainability" /></a>
+
 [![Node CI](https://github.com/Saga6569/frontend-project-lvl1/workflows/Node%20CI/badge.svg)](https://github.com/Saga6569/frontend-project-lvl1/actions)
+
+![Node CI](https://github.com/Saga6569/frontend-project-lvl1/workflows/Node%20CI/badge.svg)
+
+## Минимальные  требования 
+Node.js 14. и выше.
 
 ## Установка
 1. `$ git clone https://github.com/Saga6569/frontend-project-lvl1.git`
