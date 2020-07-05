@@ -17,24 +17,24 @@
 ### Проверка на четность
 Запуск игры `$ brain-even`
 
-[![asciicast](https://asciinema.org/a/MYqpOgSlCyhkEPDmqlKQolpRQ.svg)](https://asciinema.org/a/CGdAdOmXx4yB2KvpTMUn39tqr)
+[![asciicast](https://asciinema.org/a/CGdAdOmXx4yB2KvpTMUn39tqr.svg)](https://asciinema.org/a/CGdAdOmXx4yB2KvpTMUn39tqr)
 
 ### Калькулятор
 Запуск игры `$ brain-calc`
-[![asciicast](https://asciinema.org/a/n6WwbAwN9mambRbI27VbWHiRS.svg)](https://asciinema.org/a/8duYTDWtxar97mM6223FAdvzZ)
+[![asciicast](https://asciinema.org/a/8duYTDWtxar97mM6223FAdvzZ.svg)](https://asciinema.org/a/8duYTDWtxar97mM6223FAdvzZ)
 
 
 ### Наибольшой общий делитель (НОД)
 Запуск игры `$ brain-gcd`
-[![asciicast](https://asciinema.org/a/S3w6OSKMxSrxUmYGzCxNlulRR.svg)](https://asciinema.org/a/arIXMouusNC09hE2ngBB7JLfB)
+[![asciicast](https://asciinema.org/a/arIXMouusNC09hE2ngBB7JLfB.svg)](https://asciinema.org/a/arIXMouusNC09hE2ngBB7JLfB)
 
 ### Арифметическая прогрессия
 Запуск игры `$ brain-progression`
-[![asciicast](https://asciinema.org/a/EX06ESHC7bS5EYrSYgiLcT4VE.svg)](https://asciinema.org/a/U0MSxFt2YhYD9aufPZD559ipa)
+[![asciicast](https://asciinema.org/a/U0MSxFt2YhYD9aufPZD559ipa.svg)](https://asciinema.org/a/U0MSxFt2YhYD9aufPZD559ipa)
 
 ### Простое ли число?
 Запуск игры `$ brain-prime`
-[![asciicast](https://asciinema.org/a/mbsmpyrfuIcC9ivcE2Y2oJx5R.svg)](https://asciinema.org/a/vOhKFK9eIO6aM9F6Ov5pkLD78)
+[![asciicast](https://asciinema.org/a/vOhKFK9eIO6aM9F6Ov5pkLD78.svg)](https://asciinema.org/a/vOhKFK9eIO6aM9F6Ov5pkLD78)
 
 
  
