@@ -1,7 +1,6 @@
 <a href="https://codeclimate.com/github/Saga6569/frontend-project-lvl1/maintainability"><img src="https://api.codeclimate.com/v1/badges/9014601b27c2cee4f689/maintainability" /></a>
 
-https://travis-ci.com/Saga6569/frontend-project-lvl1.svg?branch=master
-
+[![Node CI](https://github.com/Saga6569/frontend-project-lvl1/workflows/Node%20CI/badge.svg)](https://github.com/Saga6569/frontend-project-lvl1/actions)
 
 
 
