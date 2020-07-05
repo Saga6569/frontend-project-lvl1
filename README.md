@@ -4,8 +4,7 @@
 
 <a href="https://codeclimate.com/github/Saga6569/frontend-project-lvl1/maintainability"><img src="https://api.codeclimate.com/v1/badges/9014601b27c2cee4f689/maintainability" /></a>
 
-[![Node CI](https://travis-ci.com/Saga6569/frontend-project-lvl1.svg?branch=master.svg)](https://travis-ci.com/Saga6569/frontend-project-lvl1.svg?branch=master)
-
+[![Build Status](https://travis-ci.com/Saga6569/frontend-project-lvl1.svg?branch=master)](https://travis-ci.com/Saga6569/frontend-project-lvl1)
 
 ## Минимальные  требования 
 Node.js 14. и выше.
