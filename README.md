@@ -1,7 +1,8 @@
 <a href="https://codeclimate.com/github/Saga6569/frontend-project-lvl1/maintainability"><img src="https://api.codeclimate.com/v1/badges/9014601b27c2cee4f689/maintainability" /></a>
 
+https://travis-ci.com/Saga6569/frontend-project-lvl1.svg?branch=master
 
-<a href="https://codeclimate.com/github/Saga6569/frontend-project-lvl1/test_coverage"><img src="https://api.codeclimate.com/v1/badges/9014601b27c2cee4f689/test_coverage" /></a>
+
 
 
 https://asciinema.org/a/8duYTDWtxar97mM6223FAdvzZ // brain-calc
