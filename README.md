@@ -27,10 +27,11 @@ Node.js 14. и выше.
 [![asciicast](https://asciinema.org/a/CGdAdOmXx4yB2KvpTMUn39tqr.svg)](https://asciinema.org/a/CGdAdOmXx4yB2KvpTMUn39tqr)
 
 ### Калькулятор
-Запуск игры `$ brain-calc`
-[![asciicast](https://asciinema.org/a/8duYTDWtxar97mM6223FAdvzZ.svg)](https://asciinema.org/a/8duYTDWtxar97mM6223FAdvzZ)
 
 Правила игры: Пользователю показывается случайное математическое выражение, которое нужно вычислить и записать правильный ответ.
+
+Запуск игры `$ brain-calc`
+[![asciicast](https://asciinema.org/a/8duYTDWtxar97mM6223FAdvzZ.svg)](https://asciinema.org/a/8duYTDWtxar97mM6223FAdvzZ)
 
 ### Наибольшой общий делитель (НОД)
 Запуск игры `$ brain-gcd`
@@ -39,16 +40,17 @@ Node.js 14. и выше.
 Правила игры: Пользователю показывается два случайных числа. Пользователь должен вычислить и ввести наибольший общий делитель этих чисел.
 
 ### Арифметическая прогрессия
-Запуск игры `$ brain-progression`
-[![asciicast](https://asciinema.org/a/U0MSxFt2YhYD9aufPZD559ipa.svg)](https://asciinema.org/a/U0MSxFt2YhYD9aufPZD559ipa)
 
 Правила игры: Показываем игроку ряд чисел, образующий арифметическую прогрессию, заменив любое из чисел двумя точками. Игрок должен определить это число.
 
+Запуск игры `$ brain-progression`
+[![asciicast](https://asciinema.org/a/U0MSxFt2YhYD9aufPZD559ipa.svg)](https://asciinema.org/a/U0MSxFt2YhYD9aufPZD559ipa)
+
 ### Простое ли число?
-Запуск игры `$ brain-prime`
-[![asciicast](https://asciinema.org/a/vOhKFK9eIO6aM9F6Ov5pkLD78.svg)](https://asciinema.org/a/vOhKFK9eIO6aM9F6Ov5pkLD78)
 
 Правила игры: Показываем игроку случайное число. Игрок должен определить простое ли это число и ответить "yes", если оно простое или "no" - в ином случае.
 
+Запуск игры `$ brain-prime`
+[![asciicast](https://asciinema.org/a/vOhKFK9eIO6aM9F6Ov5pkLD78.svg)](https://asciinema.org/a/vOhKFK9eIO6aM9F6Ov5pkLD78)
 
- 
+
