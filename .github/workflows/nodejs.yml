@@ -22,13 +22,13 @@ jobs:
         # https://github.com/actions/checkout
       - uses: actions/checkout@v2
         # Step's name
-      - name: Use Node.js ${{ v14.1.0 }}
+      - name: Use Node.js [ v14.1.0 ]
         # Configures the node version used on GitHub-hosted runners
         # https://github.com/actions/setup-node
         uses: actions/setup-node@v1
         # The Node.js version to configure
         with:
-          node-version: ${{ v14.1.0 }}
+          node-version: [ v14.1.0 ]
       - name: npm install, build
         # Install and build project
         run: |
@@ -46,7 +46,7 @@ jobs:
         uses: paambaati/codeclimate-action@v2.6.0
         # Add Code Climate secret key
         env:
-          CC_TEST_REPORTER_ID: ${{ 41f9c50468c709ff8b7d2ef29f90e8d942b2dce02fa09ca23a66e4a2c5346a23 }}
+          CC_TEST_REPORTER_ID: [ 41f9c50468c709ff8b7d2ef29f90e8d942b2dce02fa09ca23a66e4a2c5346a23 ]
         with:
           coverageCommand: make test-coverage
           debug: true
