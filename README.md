@@ -1,7 +1,7 @@
 <a href="https://codeclimate.com/github/Saga6569/frontend-project-lvl1/maintainability"><img src="https://api.codeclimate.com/v1/badges/9014601b27c2cee4f689/maintainability" /></a>
 
 
-2a14a7015703ea6d60765c31a2947e9ab702c5f576cf31dc00548324b95cf486
+bdbf1d1badeba9cddf6d4a8da4ce557e5a7ae6cba707bada444c740a8bcbf83c
 
 
 
