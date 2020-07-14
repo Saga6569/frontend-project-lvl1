@@ -2,9 +2,6 @@
 
 import gameEngine from '../src/index.js';
 
-import { brainGcd, resultGcd } from '../src/utility/source.js';
+import { rulesOfTheGame, gameGcd } from '../src/game/gcd.js';
 
-const gameGcd = () => {
-  gameEngine(brainGcd, resultGcd);
-};
-gameGcd();
+gameEngine(rulesOfTheGame, gameGcd);

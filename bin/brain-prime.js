@@ -2,9 +2,6 @@
 
 import gameEngine from '../src/index.js';
 
-import { brainPrime, resultIsPrime } from '../src/utility/source.js';
+import { rulesOfTheGame, gamePrime } from '../src/game/Prime.js';
 
-const gamePrime = () => {
-  gameEngine(brainPrime, resultIsPrime);
-};
-gamePrime();
+gameEngine(rulesOfTheGame, gamePrime);

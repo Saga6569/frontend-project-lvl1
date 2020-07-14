@@ -2,9 +2,6 @@
 
 import gameEngine from '../src/index.js';
 
-import { resultIsEven, brainEven } from '../src/utility/source.js';
+import { rulesOfTheGame, gameEven } from '../src/game/Even.js';
 
-const gameEven = () => {
-  gameEngine(brainEven, resultIsEven);
-};
-gameEven();
+gameEngine(rulesOfTheGame, gameEven);
