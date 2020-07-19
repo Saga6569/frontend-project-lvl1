@@ -1,6 +1,6 @@
 import randomNumber from '../utility/source.js';
 
-export const rulesOfTheGame = 'Answer "yes" if given number is prime. Otherwise answer "no".';
+export const description = 'Answer "yes" if given number is prime. Otherwise answer "no".';
 
 const isPrime = (num) => {
   for (let i = 2; i < num; i += 1) {
@@ -12,12 +12,7 @@ const isPrime = (num) => {
 };
 
 export const gamePrime = () => {
-  const value = randomNumber(1, 100);
-  let answer = '';
-  const question = value;
-  if (isPrime(value) === true) {
-    answer = 'yes';
-  }
-  answer = 'no';
+  const question = randomNumber(1, 100);
+  const answer = (isPrime(question)) ? 'yes' : 'no';
   return [answer, question];
 };

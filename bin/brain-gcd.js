@@ -2,6 +2,6 @@
 
 import gameEngine from '../src/index.js';
 
-import { rulesOfTheGame, gameGcd } from '../src/game/gcd.js';
+import { description, gameGcd } from '../src/games/gcd.js';
 
-gameEngine(rulesOfTheGame, gameGcd);
+gameEngine(description, gameGcd);

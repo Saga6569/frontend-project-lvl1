@@ -2,6 +2,6 @@
 
 import gameEngine from '../src/index.js';
 
-import { rulesOfTheGame, gamePrime } from '../src/game/Prime.js';
+import { description, gamePrime } from '../src/games/Prime.js';
 
-gameEngine(rulesOfTheGame, gamePrime);
+gameEngine(description, gamePrime);

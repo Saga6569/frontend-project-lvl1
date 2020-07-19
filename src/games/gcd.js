@@ -1,6 +1,6 @@
 import randomNumber from '../utility/source.js';
 
-export const rulesOfTheGame = 'Find the greatest common divisor of given numbers.';
+export const description = 'Find the greatest common divisor of given numbers.';
 
 const gcd = (a, b) => {
   if (!b) {

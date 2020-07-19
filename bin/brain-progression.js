@@ -2,6 +2,6 @@
 
 import gameEngine from '../src/index.js';
 
-import { rulesOfTheGame, gameProgression } from '../src/game/progression.js';
+import { description, progression } from '../src/games/progression.js';
 
-gameEngine(rulesOfTheGame, gameProgression);
+gameEngine(description, progression);
