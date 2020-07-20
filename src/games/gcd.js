@@ -1,4 +1,4 @@
-import randomNumber from '../utility/source.js';
+import { randomNumber } from '../source.js';
 
 export const description = 'Find the greatest common divisor of given numbers.';
 
@@ -10,9 +10,10 @@ const gcd = (a, b) => {
 };
 
 export const gameGcd = () => {
+  const result = {};
   const value1 = randomNumber(1, 100);
   const value2 = randomNumber(1, 100);
-  const answer = gcd(value1, value2);
-  const question = `${value1} ${value2}`;
-  return [answer, question];
+  result.answer = gcd(value1, value2);
+  result.question = `${value1} ${value2}`;
+  return result;
 };

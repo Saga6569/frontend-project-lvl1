@@ -1,4 +1,4 @@
-import randomNumber from '../utility/source.js';
+import { randomNumber } from '../source.js';
 
 export const description = 'What is the result of the expression?';
 
@@ -21,11 +21,12 @@ const act = (value1, value2, operations) => {
 };
 
 export const gameCalc = () => {
+  const result = {};
   const operations = ['-', '+', '*'];
   const indexOperator = randomNumber(0, 2);
   const value1 = randomNumber(1, 100);
   const value2 = randomNumber(1, 100);
-  const answer = act(value1, value2, operations[indexOperator]);
-  const question = `${value1} ${operations[indexOperator]} ${value2}`;
-  return [answer, question];
+  result.answer = act(value1, value2, operations[indexOperator]);
+  result.question = `${value1} ${operations[indexOperator]} ${value2}`;
+  return result;
 };
