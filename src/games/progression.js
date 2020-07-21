@@ -1,19 +1,18 @@
-import { randomNumber } from '../source.js';
+import { randomNumber } from '../utils.js';
 
 export const description = 'What number is missing in the progression?';
 
-export const progression = () => {
-  const result = {};
-  const value1 = randomNumber(1, 100);
-  const arrProgression = [];
+export const gameProgression = () => {
+  const first = randomNumber(1, 100);
+  const progression = [];
   const progressionLength = 10;
   for (let i = 1; i <= progressionLength; i += 1) {
-    const numberMax = value1 * i;
-    arrProgression.push(numberMax);
+    const current = first * i;
+    progression.push(current);
   }
-  const positionInProgression = randomNumber(0, 9);
-  result.answer = arrProgression[positionInProgression];
-  arrProgression[positionInProgression] = '..';
-  result.question = arrProgression.join('  ');
-  return result;
+  const hiddenNumberIndex = randomNumber(0, 9);
+  const answer = progression[hiddenNumberIndex];
+  progression[hiddenNumberIndex] = '..';
+  const question = progression.join('  ');
+  return { answer, question };
 };

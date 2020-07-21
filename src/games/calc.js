@@ -1,18 +1,18 @@
-import { randomNumber } from '../source.js';
+import { randomNumber } from '../utils.js';
 
 export const description = 'What is the result of the expression?';
 
-const act = (value1, value2, operations) => {
+const calc = (first, second, operations) => {
   let result = 0;
   switch (operations) {
     case '-':
-      result = value1 - value2;
+      result = first - second;
       break;
     case '+':
-      result = value1 + value2;
+      result = first + second;
       break;
     case '*':
-      result = value1 * value2;
+      result = first * second;
       break;
     default:
       console.log('error');
@@ -21,12 +21,11 @@ const act = (value1, value2, operations) => {
 };
 
 export const gameCalc = () => {
-  const result = {};
   const operations = ['-', '+', '*'];
   const indexOperator = randomNumber(0, 2);
-  const value1 = randomNumber(1, 100);
-  const value2 = randomNumber(1, 100);
-  result.answer = act(value1, value2, operations[indexOperator]);
-  result.question = `${value1} ${operations[indexOperator]} ${value2}`;
-  return result;
+  const first = randomNumber(1, 100);
+  const second = randomNumber(1, 100);
+  const answer = calc(first, second, operations[indexOperator]);
+  const question = `${first} ${operations[indexOperator]} ${second}`;
+  return { answer, question };
 };
