@@ -5,8 +5,6 @@
 
 [![Build Status](https://travis-ci.com/Saga6569/frontend-project-lvl1.svg?branch=master)](https://travis-ci.com/Saga6569/frontend-project-lvl1)
 
-[![Build Status](https://github.com/Saga6569/frontend-project-lvl1/runs/903742599?check_suite_focus=true)](https://github.com/Saga6569/frontend-project-lvl1)
-
 
 ##  Ментор [Ivan Gagarinov](https://ru.hexlet.io/u/dzencot)
 
