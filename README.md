@@ -5,6 +5,9 @@
 
 [![Build Status](https://travis-ci.com/Saga6569/frontend-project-lvl1.svg?branch=master)](https://travis-ci.com/Saga6569/frontend-project-lvl1)
 
+[![Build Status]( Saga6569/frontend-project-lvl1:.travis.yml@e3b329b .svg?branch=master)](Saga6569/frontend-project-lvl1:.travis.yml@e3b329b)
+
+ Saga6569/frontend-project-lvl1:.travis.yml@e3b329b 
 
 ##  Ментор [Ivan Gagarinov](https://ru.hexlet.io/u/dzencot)
 
