@@ -4,8 +4,6 @@ env:
   
 extends:
   - 'airbnb-base'
-  - 'plugin:jest/recommended'
-
   
 globals:
   Atomics: readonly
@@ -15,9 +13,6 @@ parserOptions:
     jsx: true
   ecmaVersion: 2018
   sourceType: module
-plugins:
-  # https://github.com/jest-community/eslint-plugin-jest
-  - jest
   
 rules:
   no-console: 0

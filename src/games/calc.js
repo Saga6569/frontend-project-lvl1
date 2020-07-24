@@ -21,8 +21,9 @@ const calc = (operator, first, second) => {
   return result;
 };
 
+const operations = ['-', '+', '*'];
+
 export const generateRound = () => {
-  const operations = ['-', '+', '*'];
   const indexOperator = randomNumber(0, operations.length - 1);
   const first = randomNumber(1, 100);
   const second = randomNumber(1, 100);
