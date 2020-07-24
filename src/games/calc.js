@@ -1,4 +1,5 @@
 import { randomNumber } from '../utils.js';
+import runEngine from '../index.js';
 
 export const description = 'What is the result of the expression?';
 
@@ -20,12 +21,14 @@ const calc = (operator, first, second) => {
   return result;
 };
 
-export const gameCalc = () => {
+export const generateRound = () => {
   const operations = ['-', '+', '*'];
-  const indexOperator = randomNumber(0, 2);
+  const indexOperator = randomNumber(0, operations.length - 1);
   const first = randomNumber(1, 100);
   const second = randomNumber(1, 100);
-  const answer = calc(operations[indexOperator], first, second);
+  const answer = String(calc(operations[indexOperator], first, second));
   const question = `${first} ${operations[indexOperator]} ${second}`;
   return { answer, question };
 };
+
+export default () => runEngine(description, generateRound);

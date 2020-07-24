@@ -1,7 +1,5 @@
 #!/usr/bin/env node
 
-import gameEngine from '../src/index.js';
+import runGameEven from '../src/games/even.js';
 
-import { description, gameEven } from '../src/games/even.js';
-
-gameEngine(description, gameEven);
+runGameEven();
