@@ -5,7 +5,7 @@
 
 [![Build Status](https://travis-ci.com/Saga6569/frontend-project-lvl1.svg?branch=master)](https://travis-ci.com/Saga6569/frontend-project-lvl1)
 
-![Node CI](https://github.com/Saga6569/frontend-project-lvl1/workflows/Node%20CI/badge.svg)(https://github.com/Saga6569/frontend-project-lvl1/actions)
+[![Node CI](https://github.com/Saga6569/frontend-project-lvl1/workflows/Node%20CI/badge.svg)](https://github.com/Saga6569/frontend-project-lvl1/actions)
 
 ##  Ментор [Ivan Gagarinov](https://ru.hexlet.io/u/dzencot)
 
