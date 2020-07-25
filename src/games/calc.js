@@ -16,7 +16,7 @@ const calc = (operator, first, second) => {
       result = first * second;
       break;
     default:
-      console.log('error');
+      console.log(`Error: unknown operator ${operator}`);
   }
   return result;
 };
