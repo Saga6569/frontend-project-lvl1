@@ -1,7 +1,7 @@
 import { randomNumber } from '../utils.js';
 import runEngine from '../index.js';
 
-export const description = 'What is the result of the expression?';
+const description = 'What is the result of the expression?';
 
 const calc = (operator, first, second) => {
   let result = 0;

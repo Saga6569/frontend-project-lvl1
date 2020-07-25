@@ -2,7 +2,7 @@ import { randomNumber } from '../utils.js';
 
 import runEngine from '../index.js';
 
-export const description = 'Find the greatest common divisor of given numbers.';
+const description = 'Find the greatest common divisor of given numbers.';
 
 const gcd = (a, b) => {
   if (!b) {

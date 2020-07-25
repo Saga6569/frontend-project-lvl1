@@ -1,7 +1,7 @@
 import { randomNumber } from '../utils.js';
 import runEngine from '../index.js';
 
-export const description = 'Answer "yes" if the number is even, otherwise answer "no"';
+const description = 'Answer "yes" if the number is even, otherwise answer "no"';
 
 export const generateRound = () => {
   const question = randomNumber(1, 100);

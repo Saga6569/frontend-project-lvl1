@@ -2,7 +2,7 @@ import { randomNumber } from '../utils.js';
 
 import runEngine from '../index.js';
 
-export const description = 'What number is missing in the progression?';
+const description = 'What number is missing in the progression?';
 
 const progressionLength = 10;
 
